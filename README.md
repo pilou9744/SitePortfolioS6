@@ -2,7 +2,7 @@
 
 Bienvenue sur le dépôt de mon portfolio personnel. Ce site web présente mon parcours, mes compétences et mes projets en tant qu'étudiant en BUT Informatique.
 
-## 📋 Fonctionnalités
+## Fonctionnalités
 
 Le site est structuré en plusieurs sections accessibles via une barre de navigation fluide :
 
@@ -14,7 +14,7 @@ Le site est structuré en plusieurs sections accessibles via une barre de naviga
 - **Langues** : Langues parlées et niveaux.
 - **Contact** : Formulaire de contact et coordonnées directes.
 
-## 🚀 Installation et Utilisation
+## Installation et Utilisation
 
 Ce projet est un site statique (HTML/CSS/JS). Aucune installation complexe n'est requise.
 
@@ -25,12 +25,12 @@ Ce projet est un site statique (HTML/CSS/JS). Aucune installation complexe n'est
 2. **Ouvrir le site** :
    - Ouvrez simplement le fichier `index.html` dans votre navigateur web préféré.
 
-## 🛠️ Technologies
+## Technologies
 
 - **HTML5** : Structure sémantique de la page.
 - **CSS3** : Mise en forme, design responsive et animations.
 - **JavaScript** : Interactivité (menu burger, etc.).
 
-## 👤 Auteur
+## Auteur
 
 **Angel Enriquez** - [GitHub](https://github.com/pilou9744/)
