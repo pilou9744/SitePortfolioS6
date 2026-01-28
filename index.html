@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Enriquez | Développeur</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links">
+      <a href="#competences">Compétences</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#projets">Projets</a>
+      <a href="#formation">Formation</a>
+      <a href="#langues">Langues</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <header>
+      <div class="hero">
+        <img class="hero-photo" src="ressources/Angel.png" alt="Photo de Angel Enriquez" />
+        <div class="hero-text">
+          <h1>Angel Enriquez</h1>
+          <h2 class="hero-subtitle">Étudiant en 3ᵉ année de BUT Informatique</h2>
+          <h3 class="hero-subtitle">Spécialité Administration, Gestion et Exploitation des Données</h3>
+          <p class="hero-desc">
+            Passionné par le développement logiciel et la gestion de données, je souhaite mettre mes compétences
+            techniques et mon sens de la rigueur au service d’une équipe de développement.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+            <a class="btn btn-secondary" href="ressources/CV_Angel_Enriquez_Developpeur.pdf" download>Télécharger CV</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <section id="competences">
+        <h2>Compétences Techniques</h2>
+        <h3>💻 Langages</h3>
+        <div>
+          <span class="tag">Java</span>
+          <span class="tag">Python</span>
+          <span class="tag">C</span>
+          <span class="tag">SQL</span>
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Ada</span>
+        </div>
+
+        <h3>🛠️ Outils & Méthodes</h3>
+        <div>
+          <span class="tag">Oracle Apex</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Windev</span>
+          <span class="tag">Gestion de projet</span>
+          <span class="tag">Machine learning</span>
+        </div>
+      </section>
+
+      <section id="experiences">
+        <h2>Expériences Professionnelles</h2>
+        <div class="card experience-split">
+          <div class="experience-left">
+            <h3>Stage – CESBIO (Juin–Juillet 2025)</h3>
+            <ul>
+              <li>Développement d’un site WordPress (Projet SCOMAG)</li>
+              <li>Valorisation des données du projet</li>
+              <li>Travail collaboratif en environnement scientifique</li>
+            </ul>
+            <div class="experience-actions">
+              <a href="https://scomag-24.sedoo.fr/" target="_blank" class="btn btn-primary">Visiter le site</a>
+            </div>
+          </div>
+          <div class="experience-right">
+            <p>Mon maître de stage, Karin Dassas, chercheur au CESBIO, a participé en 2024 à une campagne scientifique
+              intitulée SCOMAG, dont l’objectif était la collecte de données à l’aide de la technologie GNSS-R.</p>
+            <p>Dans ce cadre, elle m’a confié la réalisation d’un site web destiné à promouvoir la campagne et à
+              présenter ses résultats à des publics scientifiques comme non scientifiques. J’ai utilisé l’outil
+              WordPress tout au long de mon stage, avec pour objectif également de contribuer à la vulgarisation
+              scientifique du projet, afin de le rendre compréhensible par le grand public.</p>
+            <p>Une attention particulière a été portée à l’éco-conception du site, notamment en veillant à son impact
+              environnemental à l’aide d’outils d’évaluation tels qu’ÉcoIndex.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJETS AVEC POPUP EXTERNE ===== -->
+      <section id="projets">
+        <h2>Projets Académiques</h2>
+
+        <div class="grid">
+          <div class="card project-card"
+            data-popup="Projet réalisé en groupe consistant à développer une bibliothèque logicielle permettant la gestion de livres. Implémentation des fonctionnalités de création, d’ajout et de suppression de livres, puis construction du module bibliothèque.">
+            <h3>Bibliothèque Ada</h3>
+            <p>Gestion et organisation de livres via paquetages dédiés.</p>
+          </div>
+
+          <div class="card project-card"
+            data-popup="Développement d’une application de gestion de fromages pour un client fromager. Réalisation de l’interface graphique avec WindowBuilder et implémentation des fonctionnalités demandées.">
+            <h3>Application Java</h3>
+            <p>Interface graphique WindowBuilder pour l'achat de fromages.</p>
+          </div>
+
+          <div class="card project-card"
+            data-popup="Mise en place d’une architecture client–serveur sur VirtualBox. Configuration réseau et manipulation des commandes shell pour comprendre la communication entre machines.">
+            <h3>VM VirtualBox Shell</h3>
+            <p>Installation et configuration automatisée d’un poste virtuel.</p>
+          </div>
+
+          <div class="card project-card"
+            data-popup="Projet de modélisation et de prédiction du Nutri-Score à partir de données nutritionnelles. Nettoyage des données et entraînement de modèles de prédiction.">
+            <h3>Projet Machine Learning</h3>
+            <p>Modélisation et prédiction du Nutri-Score.</p>
+          </div>
+        </div>
+
+        <!-- Popup global -->
+        <div id="projectTooltip" class="project-tooltip"></div>
+      </section>
+
+      <section id="formation">
+        <h2>Formation</h2>
+        <p><strong>BUT Informatique (3ᵉ année)</strong> - IUT Paul Sabatier</p>
+        <p><strong>Baccalauréat STI2D</strong> - Lycée Charles de Gaulle</p>
+      </section>
+
+      <section id="langues">
+        <h2>Langues</h2>
+        <div class="langue-item">
+          <img src="ressources/fr.png" alt="France">
+          <span><strong>Français :</strong> Langue maternelle</span>
+        </div>
+        <div class="langue-item">
+          <img src="ressources/es.png" alt="Espagne">
+          <span><strong>Espagnol :</strong> Niveau C1 – Autonome et expérimenté</span>
+        </div>
+        <div class="langue-item">
+          <img src="ressources/gb.png" alt="Royaume-Uni">
+          <span><strong>Anglais :</strong> Niveau A2 – Intermédiaire</span>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <!-- Infos -->
+          <div class="card contact-info">
+            <h3>Mes Coordonnées</h3>
+            <p>📩 Email : <a href="mailto:angel.x.enriquez@gmail.com">angel.x.enriquez@gmail.com</a></p>
+            <p>📞 Téléphone : <a href="tel:+33689454905">+33 6 89 45 49 05</a></p>
+            <p>🔗 LinkedIn : <a href="https://www.linkedin.com/in/angel-enriquez-524059328/" target="_blank">Mon
+                profil
+                LinkedIn</a></p>
+            <p>📍 4 rue Clément Ader 31120 Roquettes</p>
+          </div>
+
+          <!-- Formulaire -->
+          <form class="card contact-form" id="contactForm">
+            <h3>M'envoyer un message</h3>
+            <div class="form-group">
+              <label for="subject">Objet</label>
+              <input type="text" id="subject" placeholder="Sujet de votre message" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <div class="form-actions">
+              <button type="reset" class="btn btn-secondary">Effacer</button>
+              <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+    <footer>© 2026 Angel Enriquez</footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
